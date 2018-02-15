@@ -27,13 +27,14 @@ class Parser(object):
 			print json[keyword]
 		except KeyError:
     			print "Not a valid key"
+			self.searchKeys(p.json)
 
 
 
 if __name__ == '__main__':
 	try:
         	p = Parser()
-		p.getKeys(p.json)
+		#p.getKeys(p.json)
 		p.searchKeys(p.json)
     	except IndexError:
         	fmt = 'invalid file name'
