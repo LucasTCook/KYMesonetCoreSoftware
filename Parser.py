@@ -21,18 +21,15 @@ class Parser(object):
 
 	def searchKeys(self, json, searchVal):
 		try:
-<<<<<<< HEAD
 			return json[searchVal]
 		except IndexError:
 			print("error")
-=======
 			keyword=str(raw_input('Search current values:'))
                         print keyword
 			print json[keyword]
 		except KeyError:
     			print "Not a valid key"
 			self.searchKeys(p.json)
->>>>>>> 434136ff17a090cbcca925b43cd55eaef10bf84a
 
 	def getStations(self, json):
 		stations = self.searchKeys(json,'s')
@@ -42,7 +39,6 @@ class Parser(object):
 
 if __name__ == "__main__":
 	try:
-<<<<<<< HEAD
 		p = Parser()
 		keyword = str(input('Search current values:'))
 #		p.getKeys(p.json)
@@ -53,14 +49,6 @@ if __name__ == "__main__":
 		keyword = str(input('Station Name: '))
 		print(stations.index(keyword))
 		print(data[stations.index(keyword)])
-	except IndexError:
-		fmt = 'invalid file name'
-		print(fmt.format(__file__.split('/')[-1]))
-=======
-        	p = Parser()
-		#p.getKeys(p.json)
-		p.searchKeys(p.json)
     	except IndexError:
         	fmt = 'invalid file name'
         	print(fmt.format(__file__.split('/')[-1]))
->>>>>>> 434136ff17a090cbcca925b43cd55eaef10bf84a
