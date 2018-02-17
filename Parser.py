@@ -22,11 +22,6 @@ class Parser(object):
 	def searchKeys(self, json, searchVal):
 		try:
 			return json[searchVal]
-		except IndexError:
-			print("error")
-			keyword=str(raw_input('Search current values:'))
-                        print keyword
-			print json[keyword]
 		except KeyError:
     			print "Not a valid key"
 			self.searchKeys(p.json)
