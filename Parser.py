@@ -5,7 +5,6 @@ class Parser(object):
 	def __init__(self):
 		self.json= self.load()
 
-
 	def load(self):
 		with open('current.json') as json_data:
     			d = json.load(json_data)
@@ -30,7 +29,6 @@ class Parser(object):
 		stations = self.searchKeys(json,'s')
 		stations = [stations[i:i+4] for i in range(0, len(stations), 4)]
 		return stations
-
 
 if __name__ == "__main__":
 	try:
