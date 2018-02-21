@@ -22,7 +22,7 @@ class Parser(object):
 		try:
 			return json[searchVal]
 		except KeyError:
-    			print "Not a valid key"
+    			print ('Not a valid key')
 			self.searchKeys(p.json)
 
 	def getStations(self, json):
