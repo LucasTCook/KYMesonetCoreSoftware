@@ -22,7 +22,7 @@ class Parser(object):
 		try:
 			return json[searchVal]
 		except KeyError:
-    			print ('Not a valid key')
+			print ('Not a valid key')
 			self.searchKeys(p.json)
 
 	def getStations(self, json):
@@ -42,6 +42,6 @@ if __name__ == "__main__":
 		keyword = str(input('Station Name: '))
 		print(stations.index(keyword))
 		print(data[stations.index(keyword)])
-    	except IndexError:
+	except IndexError:
         	fmt = 'invalid file name'
         	print(fmt.format(__file__.split('/')[-1]))
