@@ -1,5 +1,6 @@
 import json
 import matplotlib.pyplot as plt
+import pyproj as proj
 
 class plotSite(object):
         
@@ -12,12 +13,12 @@ class plotSite(object):
                                         
 if __name__ == "__main__":
         try:
-                ##crs_wgs = proj.Proj(init='epsg:4326')
-                ##crs_bng = proj.Proj(init='epsg:27700')
+                crs_wgs = proj.Proj(init='epsg:4326')
+                crs_bng = proj.Proj(init='epsg:27700')
                 p = plotSite()
                 for i in p.json:
-                        ##x, y = proj.transform(crs_wgs, crs_bng,i['Lon'], i['Lat'])
-                        plt.scatter(i['Lon'], i['Lat'])
+                        x, y = proj.transform(crs_wgs, crs_bng,i['Lon'], i['Lat'])
+                        plt.scatter(x y)
                 plt.show()
         except IndexError:
                 fmt = 'invalid file name'
