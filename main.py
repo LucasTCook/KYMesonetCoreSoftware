@@ -5,8 +5,7 @@ from Map import *
 if __name__ == "__main__":
         try:
                 p = Parser()
-                keyword = str(input('Search current values:'))
-                weather = p.getData(p.json, keyword)
+                weather = p.getData(p.json, 'TC03')
                 print(weather)
                 sites = p.assembleSiteObjs()
         except IndexError:
