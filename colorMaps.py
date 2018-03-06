@@ -16,8 +16,7 @@ def smoothen(colors, skip=1):
 			G = prev_color[1] + j*skip*slopes[1]
 			B = prev_color[2] + j*skip*slopes[2]
 			# B = percent*this_color[2]  + (1-percent)*prev_color[2]
-			Z.append((R, G, B))
-
+			Z.append((R, G, B))	
 		prev_color, prev_num = this_color, this_num
 
 	return Z
@@ -192,8 +191,8 @@ def ttct_colormap():
 
 	]
 	cmap = cm.colors.ListedColormap(smoothen(ttct_colors, skip=0.01))
-        vmin = 0
-        vmax = 3
+	vmin = 0
+	vmax = 3
 	return cmap, vmin, vmax
 
 def wind_colormap():
@@ -261,11 +260,11 @@ def precipmass_colormap():
 		[(255./255., 145./255., 145./255.), 100]
 	]
 
-        cmap = cm.colors.ListedColormap(smoothen(precipmass_colors, skip=1))
-        vmin = 0
-        vmax = 100
+	cmap = cm.colors.ListedColormap(smoothen(precipmass_colors, skip=1))
+	vmin = 0
+	vmax = 100
 
-        return cmap, vmin, vmax
+	return cmap, vmin, vmax
 
 
 def tempchange_colormap():

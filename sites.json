@@ -9,16 +9,6 @@
 	"NetSiteName": "Bowling Green 5 S"
 },
 {
-	"County": "Warren",
-	"Elevation": 559,
-	"local_time_zone_name": "US/Central",
-	"Lat": 36.92669,
-	"NetSiteAbbrev": "FARM",
-	"NetSiteNum": 1,
-	"Lon": -86.46519,
-	"NetSiteName": "Bowling Green 5 S"
-},
-{
 	"County": "Logan",
 	"Elevation": 660,
 	"local_time_zone_name": "US/Central",
@@ -259,16 +249,6 @@
 	"NetSiteName": "Harrodsburg 3 N"
 },
 {
-	"County": "Union",
-	"Elevation": 440,
-	"local_time_zone_name": "US/Central",
-	"Lat": 37.69185,
-	"NetSiteAbbrev": "FRNY",
-	"NetSiteNum": 26,
-	"Lon": -87.84446,
-	"NetSiteName": "Morganfield 4 E"
-},
-{
 	"County": "Cumberland",
 	"Elevation": 551,
 	"local_time_zone_name": "US/Central",
@@ -467,16 +447,6 @@
 	"NetSiteNum": 46,
 	"Lon": -87.50874,
 	"NetSiteName": "Henderson 5 E"
-},
-{
-	"County": "Breckinridge",
-	"Elevation": 698,
-	"local_time_zone_name": "US/Central",
-	"Lat": 37.71371,
-	"NetSiteAbbrev": "MQDY",
-	"NetSiteNum": 47,
-	"Lon": -86.49622,
-	"NetSiteName": "Hardinsburg 5 SW"
 },
 {
 	"County": "Nicholas",
