@@ -9,6 +9,7 @@
 import json
 import urllib.request
 from Site import *
+import numpy as np
 
 class Parser(object):
 
@@ -30,6 +31,17 @@ class Parser(object):
 				data = json.loads(url.read().decode())
 			print("---UPDATE: Current weather data updated...---")
 			return data,sites
+
+	def convert(self, data, dataType):
+		convertedData = []
+		if dataType == 'TMAX' or dataType == 'TMIN':
+			for i in data:
+				convertedData.append(np.add(32., np.multiply(i, 9./5.)))
+			print("---CONVERTED: Celcius -> Fahrenheit---"),
+			print(convertedData)
+			return convertedData
+		return data
+				
 
 	def getData(self, json, searchVal):
 		try:

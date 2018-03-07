@@ -10,20 +10,25 @@ import json
 from Parser import *
 from Map import *
 from sys import argv
+import time
 
 def main():
 	try:
+		starttime=time.time()
 		dataType = argv[1]
 		p = Parser()
 		sites = p.assembleSiteObjs()
-		weather = p.getData(p.json, dataType)
-		map = Map(weather,sites)
-		map.setupColorMap(dataType, None)
-		map.setupBasemap()
-		map.plotData()
+		while True:
+			weather = p.convert(p.getData(p.json, dataType), dataType)
+			map = Map(weather,sites)
+			map.setupColorMap(dataType, None)
+			map.setupBasemap()
+			map.plotData()
+			time.sleep(60.0 - ((time.time() - starttime) % 60.0))
+			
 		
 	except IndexError:
-		fmt = 'invalid file name'
+		fmt = 'Enter valid weather data... (ex. python main.py "TC03")'
 		print(fmt.format(__file__.split('/')[-1]))
 
 if __name__ == "__main__":

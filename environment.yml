@@ -52,5 +52,5 @@ dependencies:
   - wheel=0.30.0=py36h5eb2c71_1
   - xz=5.2.3=h0278029_2
   - zlib=1.2.11=hf3cbc9b_2
-prefix: /Users/LucTimCook/miniconda3/envs/Mesonet
+prefix: (insert your path to conda environment)
 

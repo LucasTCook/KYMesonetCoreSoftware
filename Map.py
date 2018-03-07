@@ -32,15 +32,13 @@ class Map(object):
 			lons.append(i.lon)
 			lats.append(i.lat)
 		x, y = self.baseMap(lons, lats)
-		print(x)
-		print(y)
 		x_min, x_max = min(x), max(x)
 		y_min, y_max = min(y), max(y)
 		xi = np.linspace(x_min, x_max, 1000) # xi
 		yi = np.linspace(y_min, y_max, 1000) # yi
 		xi, yi = np.meshgrid(xi, yi) # convert vectors to grids
 		valsi = mlab.griddata(x, y, self.data, xi, yi, interp='linear') # zi
-		norm = cm.colors.Normalize(vmax=120, vmin=-20)
+		norm = cm.colors.Normalize(vmax=self.vmax, vmin=self.vmin)
 		self.baseMap.contour(xi, yi, valsi, 100, cmap=self.cmap, norm=norm, zorder=0)
 		self.baseMap.contourf(xi, yi, valsi, 100, cmap=self.cmap, norm=norm, zorder=0)
 		plt.savefig("test.png", bbox_inches="tight", dpi=96)
@@ -56,7 +54,6 @@ class Map(object):
 		lw = 0.1
 		m.drawcounties(zorder=2, linewidth=lw)
 		m.drawstates(zorder=4, linewidth=lw)
-		plt.savefig("test.png", bbox_inches='tight')
 		self.baseMap = m
 		print("---UPDATE: Basemap Setup...---")
 
