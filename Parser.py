@@ -34,7 +34,7 @@ class Parser(object):
 
 	def convert(self, data, dataType):
 		convertedData = []
-		if dataType == 'TMAX' or dataType == 'TMIN':
+		if dataType == 'TMAX' or dataType == 'TMIN' or dataType == 'WCHI':
 			for i in data:
 				convertedData.append(np.add(32., np.multiply(i, 9./5.)))
 			print("---CONVERTED: Celcius -> Fahrenheit---"),
