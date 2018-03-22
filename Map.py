@@ -16,9 +16,9 @@ import matplotlib.mlab as mlab
 
 class Map(object):
         
-	def __init__(self,data,sites):
-		self.data = data
-		self.sites = sites
+	def __init__(self,dataType, db):
+		self.dataType = dataType
+		self.db = db
 		self.cmap = None
 		self.vmin = None
 		self.vmax = None
@@ -26,18 +26,15 @@ class Map(object):
 		print("---UPDATE: Map object created with current data---")
 
 	def plotData(self):
-		lons = []
-		lats = []
-		for i in self.sites:
-			lons.append(i.lon)
-			lats.append(i.lat)
+		lons = self.db.get('Lon')
+		lats = self.db.get('Lat')
 		x, y = self.baseMap(lons, lats)
 		x_min, x_max = min(x), max(x)
 		y_min, y_max = min(y), max(y)
 		xi = np.linspace(x_min, x_max, 1000) # xi
 		yi = np.linspace(y_min, y_max, 1000) # yi
 		xi, yi = np.meshgrid(xi, yi) # convert vectors to grids
-		valsi = mlab.griddata(x, y, self.data, xi, yi, interp='linear') # zi
+		valsi = mlab.griddata(x, y, self.db.get(self.dataType), xi, yi, interp='linear') # zi
 		norm = cm.colors.Normalize(vmax=self.vmax, vmin=self.vmin)
 		self.baseMap.contour(xi, yi, valsi, 100, cmap=self.cmap, norm=norm, zorder=0)
 		self.baseMap.contourf(xi, yi, valsi, 100, cmap=self.cmap, norm=norm, zorder=0)

@@ -17,15 +17,10 @@ def main():
 		starttime=time.time()
 		dataType = argv[1]
 		p = Parser()
-		sites = p.assembleSiteObjs()
-		while True:
-			weather = p.convert(p.getData(p.json, dataType), dataType)
-			map = Map(weather,sites)
-			map.setupColorMap(dataType, None)
-			map.setupBasemap()
-			map.plotData()
-			time.sleep(60.0 - ((time.time() - starttime) % 60.0))
-			
+		map = Map(dataType,p)
+		map.setupColorMap(dataType, None)
+		map.setupBasemap()
+		map.plotData()			
 		
 	except IndexError:
 		fmt = 'Enter valid weather data... (ex. python main.py "TC03")'
