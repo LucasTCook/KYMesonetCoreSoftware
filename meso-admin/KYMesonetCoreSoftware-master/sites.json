@@ -1,0 +1,680 @@
+[{
+	"County": "Warren",
+	"Elevation": 559,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.92669,
+	"NetSiteAbbrev": "FARM",
+	"NetSiteNum": 1,
+	"Lon": -86.46519,
+	"NetSiteName": "Bowling Green 5 S"
+},
+{
+	"County": "Logan",
+	"Elevation": 660,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.85296,
+	"NetSiteAbbrev": "RSVL",
+	"NetSiteNum": 2,
+	"Lon": -86.91544,
+	"NetSiteName": "Russellville 2 W"
+},
+{
+	"County": "Rowan",
+	"Elevation": 851,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.21914,
+	"NetSiteAbbrev": "MRHD",
+	"NetSiteNum": 3,
+	"Lon": -83.47736,
+	"NetSiteName": "Morehead 4 NE"
+},
+{
+	"County": "Calloway",
+	"Elevation": 568,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.61261,
+	"NetSiteAbbrev": "MRRY",
+	"NetSiteNum": 4,
+	"Lon": -88.33579,
+	"NetSiteName": "Murray 1 W"
+},
+{
+	"County": "Casey",
+	"Elevation": 958,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.28029,
+	"NetSiteAbbrev": "PCWN",
+	"NetSiteNum": 5,
+	"Lon": -84.96408,
+	"NetSiteName": "Liberty 3 SW"
+},
+{
+	"County": "Ohio",
+	"Elevation": 538,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.45732,
+	"NetSiteAbbrev": "HTFD",
+	"NetSiteNum": 6,
+	"Lon": -86.85513,
+	"NetSiteName": "Hartford 3 E"
+},
+{
+	"County": "Adair",
+	"Elevation": 848,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.1445,
+	"NetSiteAbbrev": "CMBA",
+	"NetSiteNum": 7,
+	"Lon": -85.29454,
+	"NetSiteName": "Columbia 3 N"
+},
+{
+	"County": "Bullitt",
+	"Elevation": 546,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.92245,
+	"NetSiteAbbrev": "CRMT",
+	"NetSiteNum": 8,
+	"Lon": -85.65755,
+	"NetSiteName": "Shepherdsville 6 SE"
+},
+{
+	"County": "Fayette",
+	"Elevation": 1044,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.97496,
+	"NetSiteAbbrev": "LXGN",
+	"NetSiteNum": 9,
+	"Lon": -84.53354,
+	"NetSiteName": "Lexington 7 S"
+},
+{
+	"County": "Grayson",
+	"Elevation": 722,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.46262,
+	"NetSiteAbbrev": "BLRK",
+	"NetSiteNum": 10,
+	"Lon": -86.34379,
+	"NetSiteName": "Leitchfield 3 W"
+},
+{
+	"County": "Allen",
+	"Elevation": 818,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.74426,
+	"NetSiteAbbrev": "SCTV",
+	"NetSiteNum": 11,
+	"Lon": -86.21881,
+	"NetSiteName": "Scottsville 2 W"
+},
+{
+	"County": "Caldwell",
+	"Elevation": 509,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.09534,
+	"NetSiteAbbrev": "PRNC",
+	"NetSiteNum": 12,
+	"Lon": -87.86162,
+	"NetSiteName": "Princeton 2 SE"
+},
+{
+	"County": "Knox",
+	"Elevation": 1016,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 36.87034,
+	"NetSiteAbbrev": "BMBL",
+	"NetSiteNum": 13,
+	"Lon": -83.83302,
+	"NetSiteName": "Barbourville 3 E"
+},
+{
+	"County": "Christian",
+	"Elevation": 729,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.94682,
+	"NetSiteAbbrev": "PGHL",
+	"NetSiteNum": 14,
+	"Lon": -87.52138,
+	"NetSiteName": "Hopkinsville 6 N"
+},
+{
+	"County": "Franklin",
+	"Elevation": 748,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.11617,
+	"NetSiteAbbrev": "LSML",
+	"NetSiteNum": 15,
+	"Lon": -84.88206,
+	"NetSiteName": "Frankfort 7 S"
+},
+{
+	"County": "Hopkins",
+	"Elevation": 592,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.26764,
+	"NetSiteAbbrev": "ERLN",
+	"NetSiteNum": 16,
+	"Lon": -87.48109,
+	"NetSiteName": "Madisonville 4 S"
+},
+{
+	"County": "Jackson",
+	"Elevation": 1319,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.35629,
+	"NetSiteAbbrev": "OLIN",
+	"NetSiteNum": 17,
+	"Lon": -83.97128,
+	"NetSiteName": "McKee 5 S"
+},
+{
+	"County": "Breathitt",
+	"Elevation": 688,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.53931,
+	"NetSiteAbbrev": "QKSD",
+	"NetSiteNum": 18,
+	"Lon": -83.34361,
+	"NetSiteName": "Jackson 3 SE"
+},
+{
+	"County": "Owen",
+	"Elevation": 870,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.55099,
+	"NetSiteAbbrev": "SWON",
+	"NetSiteNum": 19,
+	"Lon": -84.74443,
+	"NetSiteName": "Owenton 5 E"
+},
+{
+	"County": "Lincoln",
+	"Elevation": 977,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.57996,
+	"NetSiteAbbrev": "LGNT",
+	"NetSiteNum": 20,
+	"Lon": -84.62144,
+	"NetSiteName": "Stanford 4 NE"
+},
+{
+	"County": "Barren",
+	"Elevation": 696,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.01328,
+	"NetSiteAbbrev": "MROK",
+	"NetSiteNum": 21,
+	"Lon": -86.10588,
+	"NetSiteName": "Glasgow 11 W"
+},
+{
+	"County": "McLean",
+	"Elevation": 404,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.58527,
+	"NetSiteAbbrev": "PVRT",
+	"NetSiteNum": 22,
+	"Lon": -87.31713,
+	"NetSiteName": "Calhoun 5 NW"
+},
+{
+	"County": "Taylor",
+	"Elevation": 785,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.35652,
+	"NetSiteAbbrev": "BNGL",
+	"NetSiteNum": 23,
+	"Lon": -85.45884,
+	"NetSiteName": "Campbellsville 7 W"
+},
+{
+	"County": "Carroll",
+	"Elevation": 472,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.68919,
+	"NetSiteAbbrev": "CRRL",
+	"NetSiteNum": 24,
+	"Lon": -85.14227,
+	"NetSiteName": "Carrollton 2 E"
+},
+{
+	"County": "Mercer",
+	"Elevation": 896,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.80583,
+	"NetSiteAbbrev": "HRDB",
+	"NetSiteNum": 25,
+	"Lon": -84.83987,
+	"NetSiteName": "Harrodsburg 3 N"
+},
+{
+	"County": "Cumberland",
+	"Elevation": 551,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.80221,
+	"NetSiteAbbrev": "GRDR",
+	"NetSiteNum": 27,
+	"Lon": -85.43101,
+	"NetSiteName": "Burkesville 3 W"
+},
+{
+	"County": "Crittenden",
+	"Elevation": 594,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.37774,
+	"NetSiteAbbrev": "RPTN",
+	"NetSiteNum": 28,
+	"Lon": -88.03613,
+	"NetSiteName": "Marion 4 NE"
+},
+{
+	"County": "Madison",
+	"Elevation": 860,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.7185,
+	"NetSiteAbbrev": "ELST",
+	"NetSiteNum": 29,
+	"Lon": -84.15432,
+	"NetSiteName": "Richmond 8 E"
+},
+{
+	"County": "Marshall",
+	"Elevation": 469,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.91611,
+	"NetSiteAbbrev": "DRFN",
+	"NetSiteNum": 30,
+	"Lon": -88.33621,
+	"NetSiteName": "Benton 4 N"
+},
+{
+	"County": "Johnson",
+	"Elevation": 755,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.83058,
+	"NetSiteAbbrev": "BTCK",
+	"NetSiteNum": 31,
+	"Lon": -82.8783,
+	"NetSiteName": "Paintsville 4 W"
+},
+{
+	"County": "Morgan",
+	"Elevation": 1071,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.9007,
+	"NetSiteAbbrev": "WLBT",
+	"NetSiteNum": 32,
+	"Lon": -83.2695,
+	"NetSiteName": "West Liberty 2 SW"
+},
+{
+	"County": "Mason",
+	"Elevation": 909,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.62369,
+	"NetSiteAbbrev": "WSHT",
+	"NetSiteNum": 33,
+	"Lon": -83.80754,
+	"NetSiteName": "Maysville 3 SW"
+},
+{
+	"County": "Clark",
+	"Elevation": 973,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.03461,
+	"NetSiteAbbrev": "WNCH",
+	"NetSiteNum": 34,
+	"Lon": -84.20518,
+	"NetSiteName": "Winchester 3 NW"
+},
+{
+	"County": "Hardin",
+	"Elevation": 746,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.67939,
+	"NetSiteAbbrev": "CCLA",
+	"NetSiteNum": 35,
+	"Lon": -85.97877,
+	"NetSiteName": "Elizabethtown 8 W"
+},
+{
+	"County": "Owsley",
+	"Elevation": 784,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.45196,
+	"NetSiteAbbrev": "BNVL",
+	"NetSiteNum": 36,
+	"Lon": -83.68576,
+	"NetSiteName": "Booneville 2 S"
+},
+{
+	"County": "Metcalfe",
+	"Elevation": 1002,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.98902,
+	"NetSiteAbbrev": "RNDH",
+	"NetSiteNum": 37,
+	"Lon": -85.70415,
+	"NetSiteName": "Edmonton 5 W"
+},
+{
+	"County": "Fulton",
+	"Elevation": 345,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.57108,
+	"NetSiteAbbrev": "HCKM",
+	"NetSiteNum": 38,
+	"Lon": -89.15859,
+	"NetSiteName": "Hickman 2 E"
+},
+{
+	"County": "Harrison",
+	"Elevation": 657,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.49845,
+	"NetSiteAbbrev": "RBSN",
+	"NetSiteNum": 39,
+	"Lon": -84.34534,
+	"NetSiteName": "Cynthiana 8 N"
+},
+{
+	"County": "Campbell",
+	"Elevation": 838,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 39.01997,
+	"NetSiteAbbrev": "HHTS",
+	"NetSiteNum": 40,
+	"Lon": -84.47495,
+	"NetSiteName": "Alexandria 5 NW"
+},
+{
+	"County": "Graves",
+	"Elevation": 434,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.69823,
+	"NetSiteAbbrev": "PRYB",
+	"NetSiteNum": 41,
+	"Lon": -88.72388,
+	"NetSiteName": "Mayfield 6 SW"
+},
+{
+	"County": "Trigg",
+	"Elevation": 505,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.82746,
+	"NetSiteAbbrev": "CADZ",
+	"NetSiteNum": 42,
+	"Lon": -87.86036,
+	"NetSiteName": "Cadiz 4 SW"
+},
+{
+	"County": "Clinton",
+	"Elevation": 1020,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.71057,
+	"NetSiteAbbrev": "ALBN",
+	"NetSiteNum": 43,
+	"Lon": -85.13822,
+	"NetSiteName": "Albany 1 N"
+},
+{
+	"County": "Boone",
+	"Elevation": 896,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.96701,
+	"NetSiteAbbrev": "HUEY",
+	"NetSiteNum": 44,
+	"Lon": -84.72165,
+	"NetSiteName": "Burlington 4 S"
+},
+{
+	"County": "Knott",
+	"Elevation": 1556,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.40718,
+	"NetSiteAbbrev": "VEST",
+	"NetSiteNum": 45,
+	"Lon": -82.99309,
+	"NetSiteName": "Hindman 5 N"
+},
+{
+	"County": "Henderson",
+	"Elevation": 513,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.82107,
+	"NetSiteAbbrev": "GRHM",
+	"NetSiteNum": 46,
+	"Lon": -87.50874,
+	"NetSiteName": "Henderson 5 E"
+},
+{
+	"County": "Nicholas",
+	"Elevation": 940,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.27965,
+	"NetSiteAbbrev": "CLSL",
+	"NetSiteNum": 48,
+	"Lon": -84.10369,
+	"NetSiteName": "Carlisle 5 SW"
+},
+{
+	"County": "Lewis",
+	"Elevation": 546,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.58051,
+	"NetSiteAbbrev": "CHTR",
+	"NetSiteNum": 49,
+	"Lon": -83.42322,
+	"NetSiteName": "Vanceburg 6 W"
+},
+{
+	"County": "McCreary",
+	"Elevation": 1312,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 36.77062,
+	"NetSiteAbbrev": "FLRK",
+	"NetSiteNum": 50,
+	"Lon": -84.47668,
+	"NetSiteName": "Whitley City 3 N"
+},
+{
+	"County": "Pike",
+	"Elevation": 2774,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.2848,
+	"NetSiteAbbrev": "DORT",
+	"NetSiteNum": 51,
+	"Lon": -82.52458,
+	"NetSiteName": "Pikeville 13 S"
+},
+{
+	"County": "Shelby",
+	"Elevation": 770,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.16398,
+	"NetSiteAbbrev": "FCHV",
+	"NetSiteNum": 52,
+	"Lon": -85.38443,
+	"NetSiteName": "Shelbyville 10 W"
+},
+{
+	"County": "Oldham",
+	"Elevation": 766,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.46417,
+	"NetSiteAbbrev": "LGRN",
+	"NetSiteNum": 53,
+	"Lon": -85.47337,
+	"NetSiteName": "La Grange 6 NW"
+},
+{
+	"County": "Hart",
+	"Elevation": 716,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.2606,
+	"NetSiteAbbrev": "HDYV",
+	"NetSiteNum": 54,
+	"Lon": -85.77805,
+	"NetSiteName": "Munfordville 6 E"
+},
+{
+	"County": "Lawrence",
+	"Elevation": 716,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.09948,
+	"NetSiteAbbrev": "LUSA",
+	"NetSiteNum": 55,
+	"Lon": -82.60342,
+	"NetSiteName": "Louisa 1 S"
+},
+{
+	"County": "Bath",
+	"Elevation": 829,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.08892,
+	"NetSiteAbbrev": "PRST",
+	"NetSiteNum": 56,
+	"Lon": -83.76462,
+	"NetSiteName": "Owingsville 4 S"
+},
+{
+	"County": "Meade",
+	"Elevation": 603,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.95147,
+	"NetSiteAbbrev": "BRND",
+	"NetSiteNum": 57,
+	"Lon": -86.22353,
+	"NetSiteName": "Brandenburg 4 SW"
+},
+{
+	"County": "Marion",
+	"Elevation": 764,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.62604,
+	"NetSiteAbbrev": "LRTO",
+	"NetSiteNum": 58,
+	"Lon": -85.37044,
+	"NetSiteName": "Lebanon 8 NW"
+},
+{
+	"County": "LaRue",
+	"Elevation": 831,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.57281,
+	"NetSiteAbbrev": "HDGV",
+	"NetSiteNum": 59,
+	"Lon": -85.7045,
+	"NetSiteName": "Hodgenville 2 E"
+},
+{
+	"County": "Letcher",
+	"Elevation": 1152,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.12514,
+	"NetSiteAbbrev": "WTBG",
+	"NetSiteNum": 60,
+	"Lon": -82.84103,
+	"NetSiteName": "Whitesburg 2 NW"
+},
+{
+	"County": "Simpson",
+	"Elevation": 740,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.6733,
+	"NetSiteAbbrev": "SWZR",
+	"NetSiteNum": 61,
+	"Lon": -86.61416,
+	"NetSiteName": "Franklin 4 SW"
+},
+{
+	"County": "Muhlenberg",
+	"Elevation": 522,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.28792,
+	"NetSiteAbbrev": "CCTY",
+	"NetSiteNum": 62,
+	"Lon": -87.16084,
+	"NetSiteName": "Greenville 6 N"
+},
+{
+	"County": "Todd",
+	"Elevation": 593,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.75871,
+	"NetSiteAbbrev": "ZION",
+	"NetSiteNum": 63,
+	"Lon": -87.21381,
+	"NetSiteName": "Elkton 5 SW"
+},
+{
+	"County": "Warren",
+	"Elevation": 551,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.01154,
+	"NetSiteAbbrev": "PSPG",
+	"NetSiteNum": 64,
+	"Lon": -86.37331,
+	"NetSiteName": "Bowling Green 4 E"
+},
+{
+	"County": "Harlan",
+	"Elevation": 4031,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 36.91973,
+	"NetSiteAbbrev": "BMTN",
+	"NetSiteNum": 65,
+	"Lon": -82.90619,
+	"NetSiteName": "Harlan 24 E"
+},
+{
+	"County": "Butler",
+	"Elevation": 421,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.17535,
+	"NetSiteAbbrev": "WDBY",
+	"NetSiteNum": 66,
+	"Lon": -86.64886,
+	"NetSiteName": "Morgantown 4 SSE"
+},
+{
+	"County": "Boyle",
+	"Elevation": 981,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 37.6235,
+	"NetSiteAbbrev": "DANV",
+	"NetSiteNum": 67,
+	"Lon": -84.82212,
+	"NetSiteName": "Danville 3 SW"
+},
+{
+	"County": "Shelby",
+	"Elevation": 844,
+	"local_time_zone_name": "US/Eastern",
+	"Lat": 38.33022,
+	"NetSiteAbbrev": "CROP",
+	"NetSiteNum": 68,
+	"Lon": -85.16864,
+	"NetSiteName": "Shelbyville 9 NNE"
+},
+{
+	"County": "Breckinridge",
+	"Elevation": 643,
+	"local_time_zone_name": "US/Central",
+	"Lat": 37.75927,
+	"NetSiteAbbrev": "HARD",
+	"NetSiteNum": 69,
+	"Lon": -86.46125,
+	"NetSiteName": "Hardinsburg 2 SSW"
+},
+{
+	"County": "Monroe",
+	"Elevation": 842,
+	"local_time_zone_name": "US/Central",
+	"Lat": 36.66154,
+	"NetSiteAbbrev": "GAMA",
+	"NetSiteNum": 70,
+	"Lon": -85.79668,
+	"NetSiteName": "Tompkinsville 7 SW"
+}]

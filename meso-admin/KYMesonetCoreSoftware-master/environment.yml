@@ -1,0 +1,56 @@
+name: Mesonet
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - basemap=1.1.0=py36_4
+  - basemap-data-hires=1.1.0=0
+  - curl=7.55.1=0
+  - ecmwf_grib=1.23.1=2
+  - geos=3.6.2=1
+  - hdf4=4.2.13=0
+  - hdf5=1.10.1=2
+  - jasper=1.900.1=4
+  - jpeg=9b=2
+  - krb5=1.14.2=0
+  - libnetcdf=4.4.1.1=10
+  - libssh2=1.8.0=2
+  - proj4=4.9.3=5
+  - pygrib=2.0.2=py36_3
+  - pyproj=1.9.5.1=py36_0
+  - pyshp=1.2.12=py_0
+  - ca-certificates=2017.08.26=ha1e5d58_0
+  - certifi=2018.1.18=py36_0
+  - cycler=0.10.0=py36hfc81398_0
+  - freetype=2.8=h12048fb_1
+  - intel-openmp=2018.0.0=h8158457_8
+  - libcxx=4.0.1=h579ed51_0
+  - libcxxabi=4.0.1=hebd6815_0
+  - libedit=3.1=hb4e282d_0
+  - libffi=3.2.1=h475c297_4
+  - libgfortran=3.0.1=h93005f0_2
+  - libpng=1.6.34=he12f830_0
+  - libtiff=4.0.9=h0dac147_0
+  - matplotlib=2.1.2=py36h6d6146d_0
+  - mkl=2018.0.1=hfbd8650_4
+  - ncurses=6.0=hd04f020_2
+  - numpy=1.14.1=py36h8a80b8c_1
+  - olefile=0.45.1=py36_0
+  - openssl=1.0.2n=hdbc3d79_0
+  - pillow=5.0.0=py36hfcce615_0
+  - pip=9.0.1=py36_5
+  - pyparsing=2.2.0=py36hb281f35_0
+  - python=3.6.4=hc167b69_1
+  - python-dateutil=2.6.1=py36h86d2abb_1
+  - pytz=2018.3=py36_0
+  - readline=7.0=hc1231fa_4
+  - setuptools=38.5.1=py36_0
+  - six=1.11.0=py36h0e22d5e_1
+  - sqlite=3.22.0=h3efe00b_0
+  - tk=8.6.7=h35a86e2_3
+  - tornado=4.5.3=py36_0
+  - wheel=0.30.0=py36h5eb2c71_1
+  - xz=5.2.3=h0278029_2
+  - zlib=1.2.11=hf3cbc9b_2
+prefix: (insert your path to conda environment)
+
