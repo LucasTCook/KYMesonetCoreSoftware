@@ -1,3 +1,21 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: chunh
+ * Date: 4/5/2018
+ * Time: 1:11 PM
+ */
+
+if(isset($_POST['temperature'])) {
+    $message = "";
+	$command = $_GET['temperature'];
+    $output = passthru("python main.py $command");
+
+} else {
+	$message = "ERROR!";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,14 +70,22 @@
           <div class="col-xs-12 mx-auto my-5">
             <h2 class="section-heading text-center text-muted my-4">Create a <span class="bg-red">Custom Map<span></h2>
             <!-- <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
-            <form class="cmap-form" id="weather" method="GET" action="./main.php">
+            <form class="cmap-form" id="weather" method="POST" action="">
               <select class="slct" name="temperature">
                 <option>High Temperature</option>
                 <option>Low Temperature</option>
               </select>
-              <button class="btn btn-primary btn-xl js-scroll-trigger" type="submit">Get Started!</button>
+              <button class="btn btn-primary btn-xl js-scroll-trigger" type="submit" name="submit">Get Started!</button>
             </form>
-            <img src="./img/gears.png">
+              <?php
+              echo $message;
+              if(isset($_POST['submit'])) {
+                  echo '<img src="./test.png">';
+              } else {
+                  echo '<img src="./img/gears.png">';
+              }
+              ?>
+
           </div>
         </div>
       </div>
