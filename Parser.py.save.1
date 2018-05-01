@@ -1,0 +1,142 @@
+##      Kentucky Mesonet Core Software -- CS 496 WKU
+##
+##      Scope: To develop a dynamic map to visualize different weather data
+##
+##      Contributers: Lucas Cook, Tyler Carrico, ChunHei Yuen
+
+
+
+import json
+import urllib.request
+from Site import *
+import numpy as np
+
+class Parser(object):
+	def __init__(self):
+		self.url = "http://www.kymesonet.org/app.json"
+		self.json = self.load()
+		self.keys = ["TAIR","RELH","PRCP","WSPD","WDIR","WSMX","SRAD","DWPT","WCHI", "Lon", "Lat"]
+		self.getPsuedoValues()
+
+	def load(self):
+		with urllib.request.urlopen(self.url) as url:
+			data = json.loads(url.read().decode())
+		return data
+	
+	def get(self,data):
+		if data not in self.keys:
+			print("NOT A VALID KEY")
+		weatherData = []
+		for i in range(0,len(self.json)):
+			if(self.json[i][data] != None):
+				weatherData.append(self.convert(self.json[i][data], data))
+##				print(weatherData)
+		return weatherData
+
+	def convert(self, data, dataType):
+		print(data)
+		if dataType == 'TMAX' or dataType == 'TMIN' or dataType == 'TAIR' or dataType == 'DWPT':
+			return np.add(32., np.multiply(float(data), 9./5.))
+		elif dataType == 'PRCP':
+			return np.multiply(float(data), 0.03937)
+		elif dataType == 'WSPD' or dataType == 'PEAK':
+			#MPH
+			return np.multiply(float(data), 2.237)
+		return data
+
+
+
+	def getPsuedoValues(self):
+
+		psuedoPoints = [{'lat': 36.217687, 'lon': -90.065918},
+                        {'lat': 39.223742, 'lon': -90.153809},
+                        {'lat': 39.223742, 'lon': -90.153809},
+                        {'lat': 36.341678, 'lon': -81.804199},
+                        {'lat': 36.004673, 'lon': -85.297852},
+                        {'lat': 39.512517, 'lon': -85.144043},
+                        {'lat': 39.257778, 'lon': -81.540527}]
+
+
+		lons = self.get('Lon')
+		lats = self.get('Lat')
+		loc = {}
+
+		for i in range(0, len(lons)):
+			loc = {'lat': lats[i], 'lon': lons[i], 'index': i}
+
+		for i in psuedoPoints:
+			min = self.closest(loc, i)
+
+
+		print(min)
+
+
+	def distance(self, lat1, lon1, lat2, lon2):
+		p = 0.017453292519943295
+		a = 0.5 - cos((lat2-lat1)*p)/2 + cos(lat1*p)*cos(lat2*p) * (1-cos((lon2-lon1)*p)) / 2
+		return 12742 * asin(sqrt(a))
+
+	def closest(self, data, v):
+		print(v['lat'])
+		return min(data, key=lambda p: self.distance(v['lat'],v['lon'],p['lat'],p['lon']))
+
+
+##
+##class Parser(object):
+##
+##	def __init__(self):
+##		self.url = "http://www.kymesonet.org/current.json"
+##		self.json,self.sites= self.load(0)
+##
+##	def load(self, refresh):
+##		if refresh == 1:
+##			with urllib.request.urlopen(self.url) as url:
+##				data = json.loads(url.read().decode())
+##			print("---UPDATE: Current weather JSON updated...---")
+##			self.json = data
+##		else:
+##			with open('sites.json') as json_data:
+##				sites = json.load(json_data)
+##			print("---UPDATE: Site Location Data Loaded...---")
+##			with urllib.request.urlopen(self.url) as url:
+##				data = json.loads(url.read().decode())
+##			print("---UPDATE: Current weather data updated...---")
+##			return data,sites
+##
+##	def convert(self, data, dataType):
+##		convertedData = []
+##		if dataType == 'TMAX' or dataType == 'TMIN' or dataType == 'WCHI':
+##			for i in data:
+##				convertedData.append(np.add(32., np.multiply(i, 9./5.)))
+##			print("---CONVERTED: Celcius -> Fahrenheit---"),
+##			print(convertedData)
+##			return convertedData
+##		return data
+##				
+##
+##	def getData(self, json, searchVal):
+##		try:
+##			print("---UPDATE: {0} Data Fetched---".format(searchVal))
+##			print(json[searchVal])
+##			return json[searchVal]
+##		except KeyError:
+##			print ('Not a valid searchVal')
+##			return False
+##
+##	def getSiteNames(self, json):
+##		sites = self.getData(json,'s')
+##		sites = [sites[i:i+4] for i in range(0, len(sites), 4)]
+##		print("---UPDATE: Parsing Sites---")
+##		print(sites)
+##		return sites
+##
+##	def assembleSiteObjs(self):
+##		count = 0
+##		siteObjs = []
+##		siteNames = self.getSiteNames(self.json)
+##		for site in self.sites:
+##			s = Site(site['Lon'], site['Lat'])
+##			siteObjs.append(s)
+##			count = count + 1
+##		print("---UPDATE: Site Objects Created...---")
+##		return siteObjs

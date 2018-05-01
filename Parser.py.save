@@ -32,11 +32,11 @@ class Parser(object):
 		self.nearest = self.getNeighbor()
 
 	def load(self):
-		return requests.get(self.url).json()
+#		return requests.get(self.url).json()
 
-#		with open(self.testPath) as json_data:
-#			d = json.load(json_data)
-#		return d
+		with open(self.testPath) as json_data:
+			d = json.load(json_data)
+		return d
 
 	def get(self,data, convert=1):
 		if data not in self.keys:
@@ -47,8 +47,8 @@ class Parser(object):
 				weatherData.append(self.json[i][data])
 		if(convert == 1):
 			weatherData = self.convert(weatherData, data)
-#		else:
-			#print("Not Converting: " + str(data))
+		else:
+			print("Not Converting: " + str(data))
 
 		return weatherData
 
@@ -69,12 +69,12 @@ class Parser(object):
 			print(neighbors[i]['index'])
 			data[locs[i]['index']] = data[neighbors[i]['index']]
 
+		print(data)
 		return data
 
 	def convert(self, data, dataType):
 		data = self.RepairDownStations(data)
 
-		print("in convert..{0}",dataType)
 		data = np.array(data, dtype=np.float32)
  
 		if dataType == 'TMAX' or dataType == 'TMIN' or dataType == 'TAIR' or dataType == 'DWPT':
@@ -85,11 +85,10 @@ class Parser(object):
 			#MPH
 			return np.multiply(data, 2.237).tolist()
 		elif dataType == 'WCHI':
-			TAIR_c = self.RepairDownStations(self.get('TAIR', 0))
-			TAIR_c = np.array(TAIR_c, dtype=np.float32)
+			TAIR_c = self.RepairDownStations(                data = self.RepairDownStations(data)
+			TAIR_c = np.array(self.get('TAIR',0), dtype=np.float32)
 			TAIR_f = np.add(32., np.multiply(TAIR_c, 9./5.))
-			WSPD_kph = self.RepairDownStations(self.get('WSPD', 0))
-			WSPD_kph = np.multiply(np.array(WSPD_kph, dtype=np.float32), 3.6)
+			WSPD_kph = np.multiply(np.array(self.get('WSPD',0), dtype=np.float32), 3.6)
 			temp_w = np.power(WSPD_kph, 0.16)
 			temp_1 = np.multiply(TAIR_c, 0.6215)
 			temp_2 = np.multiply(temp_w, 11.37)
